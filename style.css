@@ -1,0 +1,43 @@
+/* Apply Mulish font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Mulish', sans-serif;
+  font-size: large;
+}
+
+.loader {
+    border-radius: 9999px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #c7d2fe transparent transparent transparent;
+}
+
+.obfuscated {
+    display: inline-block;
+    width: 0.6em;
+    font-family: monospace;
+    animation: obfuscate-flicker 0.1s steps(1) infinite;
+}
+
+@keyframes obfuscate-flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+.server-status-card {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 0 0 0 4px #9fef9f50;
+    border: 2px solid #cbd5e1;
+    transition: box-shadow 0.2s ease;
+    background-image: url('https://i.imgur.com/0fYVFeD.png'); /* Pixel paper style */
+    background-size: cover;
+  }
+  
+  .server-status-card:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  }
+  
